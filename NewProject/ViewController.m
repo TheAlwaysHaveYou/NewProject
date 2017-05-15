@@ -7,7 +7,11 @@
 //
 
 #import "ViewController.h"
+<<<<<<< HEAD
 #import "FKDLabel.h"
+=======
+
+>>>>>>> 49a1b884cb0fb74a1abbb4bed6dd49cb28139b36
 @interface ViewController ()
 
 @end
@@ -16,11 +20,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+<<<<<<< HEAD
     
     
     NSLog(@"123456");
     
     FKDLabel *label = [[FKDLabel alloc] init];
+=======
+    // Do any additional setup after loading the view, typically from a nib.
+>>>>>>> 49a1b884cb0fb74a1abbb4bed6dd49cb28139b36
 }
 
 
