@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3102771D1EC5A43700F6B069 /* FKDLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3102771C1EC5A43700F6B069 /* FKDLabel.m */; };
 		310277211ECA89FD00F6B069 /* beautiful.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 310277201ECA89FD00F6B069 /* beautiful.jpeg */; };
+		310277251ECAAAC000F6B069 /* ClockNumberController.m in Sources */ = {isa = PBXBuildFile; fileRef = 310277231ECAAAC000F6B069 /* ClockNumberController.m */; };
+		310277261ECAAAC000F6B069 /* ClockNumberController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 310277241ECAAAC000F6B069 /* ClockNumberController.xib */; };
 		315447081EC1C3A8009FEB1A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 315447071EC1C3A8009FEB1A /* main.m */; };
 		3154470B1EC1C3A8009FEB1A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3154470A1EC1C3A8009FEB1A /* AppDelegate.m */; };
 		3154470E1EC1C3A8009FEB1A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3154470D1EC1C3A8009FEB1A /* ViewController.m */; };
@@ -21,6 +23,9 @@
 		3102771B1EC5A43700F6B069 /* FKDLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKDLabel.h; sourceTree = "<group>"; };
 		3102771C1EC5A43700F6B069 /* FKDLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKDLabel.m; sourceTree = "<group>"; };
 		310277201ECA89FD00F6B069 /* beautiful.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = beautiful.jpeg; sourceTree = "<group>"; };
+		310277221ECAAAC000F6B069 /* ClockNumberController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockNumberController.h; sourceTree = "<group>"; };
+		310277231ECAAAC000F6B069 /* ClockNumberController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockNumberController.m; sourceTree = "<group>"; };
+		310277241ECAAAC000F6B069 /* ClockNumberController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClockNumberController.xib; sourceTree = "<group>"; };
 		315447031EC1C3A8009FEB1A /* NewProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		315447071EC1C3A8009FEB1A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		315447091EC1C3A8009FEB1A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -67,6 +72,9 @@
 				3154470A1EC1C3A8009FEB1A /* AppDelegate.m */,
 				3154470C1EC1C3A8009FEB1A /* ViewController.h */,
 				3154470D1EC1C3A8009FEB1A /* ViewController.m */,
+				310277221ECAAAC000F6B069 /* ClockNumberController.h */,
+				310277231ECAAAC000F6B069 /* ClockNumberController.m */,
+				310277241ECAAAC000F6B069 /* ClockNumberController.xib */,
 				3102771B1EC5A43700F6B069 /* FKDLabel.h */,
 				3102771C1EC5A43700F6B069 /* FKDLabel.m */,
 				310277201ECA89FD00F6B069 /* beautiful.jpeg */,
@@ -147,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				315447161EC1C3A8009FEB1A /* LaunchScreen.storyboard in Resources */,
+				310277261ECAAAC000F6B069 /* ClockNumberController.xib in Resources */,
 				315447131EC1C3A8009FEB1A /* Assets.xcassets in Resources */,
 				315447111EC1C3A8009FEB1A /* Main.storyboard in Resources */,
 				310277211ECA89FD00F6B069 /* beautiful.jpeg in Resources */,
@@ -161,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3154470E1EC1C3A8009FEB1A /* ViewController.m in Sources */,
+				310277251ECAAAC000F6B069 /* ClockNumberController.m in Sources */,
 				3154470B1EC1C3A8009FEB1A /* AppDelegate.m in Sources */,
 				3102771D1EC5A43700F6B069 /* FKDLabel.m in Sources */,
 				315447081EC1C3A8009FEB1A /* main.m in Sources */,
