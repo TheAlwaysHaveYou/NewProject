@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3102771D1EC5A43700F6B069 /* FKDLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3102771C1EC5A43700F6B069 /* FKDLabel.m */; };
+		310277211ECA89FD00F6B069 /* beautiful.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 310277201ECA89FD00F6B069 /* beautiful.jpeg */; };
 		315447081EC1C3A8009FEB1A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 315447071EC1C3A8009FEB1A /* main.m */; };
 		3154470B1EC1C3A8009FEB1A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3154470A1EC1C3A8009FEB1A /* AppDelegate.m */; };
 		3154470E1EC1C3A8009FEB1A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3154470D1EC1C3A8009FEB1A /* ViewController.m */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		3102771B1EC5A43700F6B069 /* FKDLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKDLabel.h; sourceTree = "<group>"; };
 		3102771C1EC5A43700F6B069 /* FKDLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKDLabel.m; sourceTree = "<group>"; };
+		310277201ECA89FD00F6B069 /* beautiful.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = beautiful.jpeg; sourceTree = "<group>"; };
 		315447031EC1C3A8009FEB1A /* NewProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		315447071EC1C3A8009FEB1A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		315447091EC1C3A8009FEB1A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				3154470D1EC1C3A8009FEB1A /* ViewController.m */,
 				3102771B1EC5A43700F6B069 /* FKDLabel.h */,
 				3102771C1EC5A43700F6B069 /* FKDLabel.m */,
+				310277201ECA89FD00F6B069 /* beautiful.jpeg */,
 				3154470F1EC1C3A8009FEB1A /* Main.storyboard */,
 				315447121EC1C3A8009FEB1A /* Assets.xcassets */,
 				315447141EC1C3A8009FEB1A /* LaunchScreen.storyboard */,
@@ -146,6 +149,7 @@
 				315447161EC1C3A8009FEB1A /* LaunchScreen.storyboard in Resources */,
 				315447131EC1C3A8009FEB1A /* Assets.xcassets in Resources */,
 				315447111EC1C3A8009FEB1A /* Main.storyboard in Resources */,
+				310277211ECA89FD00F6B069 /* beautiful.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +284,7 @@
 				DEVELOPMENT_TEAM = VW8U9YA9E8;
 				INFOPLIST_FILE = NewProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Babyun.NewProject;
+				PRODUCT_BUNDLE_IDENTIFIER = Fan.NewProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -292,7 +296,7 @@
 				DEVELOPMENT_TEAM = VW8U9YA9E8;
 				INFOPLIST_FILE = NewProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Babyun.NewProject;
+				PRODUCT_BUNDLE_IDENTIFIER = Fan.NewProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
