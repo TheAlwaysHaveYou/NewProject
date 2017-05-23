@@ -7,8 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "ClockNumberController.h"
+#import "SecondController.h"
 
-@interface AppDelegate ()
+@interface AppDelegate ()<UITabBarControllerDelegate>
 
 @end
 
@@ -16,10 +18,26 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
+    UIViewController *viewController1 = [[ClockNumberController alloc] init];
+    viewController1.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"1" image:nil tag:1];
+    UIViewController *viewController2 = [[SecondController alloc] init];
+    viewController2.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"2" image:nil tag:2];
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    tabBarController.viewControllers = @[viewController1, viewController2];
+    tabBarController.delegate = self;
+    self.window.rootViewController = tabBarController;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
+    CATransition *transition = [CATransition animation];
+    transition.type = kCATransitionFade;
+    [tabBarController.view.layer addAnimation:transition forKey:nil];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

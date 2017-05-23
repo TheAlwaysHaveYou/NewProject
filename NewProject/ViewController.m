@@ -8,11 +8,17 @@
 
 #import "ViewController.h"
 #import <GLKit/GLKit.h>
+#import <OpenGLES/EAGL.h>
 #import "FKDLabel.h"
 
 
 #define LIGHT_DIRECTION 0, 1, -0.5
 #define AMBIENT_LIGHT 0.5
+
+typedef struct {
+    NSInteger age;
+    char *name;
+}MyName;
 
 @interface ViewController ()
 
@@ -26,15 +32,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
     
+    MyName nn = {1,""};
+    nn.age = 123;
 //    FKDLabel *label = [[FKDLabel alloc] init];
     
 //    [self separaterImageForViewLayer];
     
 //    [self changeAlphaWithMoreView];
     
-    [self _3DView];
+//    [self _3DView];
+    
+    [self CATextLayerForText];
+    
+    
     
     
 }
@@ -167,7 +178,32 @@
     UIColor *color = [UIColor colorWithWhite:0 alpha:shadow];
     layer.backgroundColor = color.CGColor;
 }
-
+//CATextLayer绘制文字
+- (void)CATextLayerForText {
+    self.containerView = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.containerView.backgroundColor = [UIColor lightGrayColor];
+    [self.view addSubview:self.containerView];
+    
+    CATextLayer *textLayer = [CATextLayer layer];
+    textLayer.frame = self.containerView.bounds;
+    textLayer.contentsScale = [UIScreen mainScreen].scale;
+    [self.containerView.layer addSublayer:textLayer];
+    
+    textLayer.foregroundColor = [UIColor blackColor].CGColor;
+    textLayer.alignmentMode = kCAAlignmentCenter;
+    textLayer.wrapped = YES;
+    
+    
+    UIFont *font = [UIFont systemFontOfSize:20];
+    CFStringRef fontName = (__bridge CFStringRef)font.fontName;
+    CGFontRef fontRef = CGFontCreateWithFontName(fontName);
+    textLayer.font = fontRef;
+    textLayer.fontSize = font.pointSize;
+    CGFontRelease(fontRef);
+    
+    textLayer.string = @"“Lorem ipsum dolor sit amet, consectetur adipiscing \n elit. Quisque massa arcu, eleifend vel varius in, facilisis pulvinar \n leo. Nunc quis nunc at mauris pharetra condimentum ut ac neque. Nunc elementum, libero ut porttitor dictum, diam odio congue lacus, vel \n fringilla sapien diam at purus. Etiam suscipit pretium nunc sit amet \n lobortis”";
+    
+}
 
 
 
