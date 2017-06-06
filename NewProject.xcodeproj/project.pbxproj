@@ -19,7 +19,18 @@
 		315447111EC1C3A8009FEB1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3154470F1EC1C3A8009FEB1A /* Main.storyboard */; };
 		315447131EC1C3A8009FEB1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 315447121EC1C3A8009FEB1A /* Assets.xcassets */; };
 		315447161EC1C3A8009FEB1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 315447141EC1C3A8009FEB1A /* LaunchScreen.storyboard */; };
+		3158507C1EE50660003B37BD /* Script.sh in Resources */ = {isa = PBXBuildFile; fileRef = 3158507B1EE50660003B37BD /* Script.sh */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		315850891EE50984003B37BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 315446FB1EC1C3A8009FEB1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 315850851EE508F4003B37BD;
+			remoteInfo = Shall;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3102771B1EC5A43700F6B069 /* FKDLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKDLabel.h; sourceTree = "<group>"; };
@@ -41,6 +52,7 @@
 		315447121EC1C3A8009FEB1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		315447151EC1C3A8009FEB1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		315447171EC1C3A8009FEB1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3158507B1EE50660003B37BD /* Script.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = Script.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +91,7 @@
 				3154470D1EC1C3A8009FEB1A /* ViewController.m */,
 				310277221ECAAAC000F6B069 /* ClockNumberController.h */,
 				310277231ECAAAC000F6B069 /* ClockNumberController.m */,
+				3158507B1EE50660003B37BD /* Script.sh */,
 				310277241ECAAAC000F6B069 /* ClockNumberController.xib */,
 				310277271ED2806900F6B069 /* SecondController.h */,
 				310277281ED2806900F6B069 /* SecondController.m */,
@@ -105,6 +118,23 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXLegacyTarget section */
+		315850851EE508F4003B37BD /* Shall */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 315850861EE508F4003B37BD /* Build configuration list for PBXLegacyTarget "Shall" */;
+			buildPhases = (
+			);
+			buildToolPath = ./Script.sh;
+			buildWorkingDirectory = NewProject;
+			dependencies = (
+			);
+			name = Shall;
+			passBuildSettingsInEnvironment = 1;
+			productName = Shall;
+		};
+/* End PBXLegacyTarget section */
+
 /* Begin PBXNativeTarget section */
 		315447021EC1C3A8009FEB1A /* NewProject */ = {
 			isa = PBXNativeTarget;
@@ -113,10 +143,13 @@
 				315446FF1EC1C3A8009FEB1A /* Sources */,
 				315447001EC1C3A8009FEB1A /* Frameworks */,
 				315447011EC1C3A8009FEB1A /* Resources */,
+				3158508B1EE65465003B37BD /* ShellScript */,
+				3158508C1EE683C7003B37BD /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3158508A1EE50984003B37BD /* PBXTargetDependency */,
 			);
 			name = NewProject;
 			productName = NewProject;
@@ -137,6 +170,11 @@
 						DevelopmentTeam = VW8U9YA9E8;
 						ProvisioningStyle = Automatic;
 					};
+					315850851EE508F4003B37BD = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = VW8U9YA9E8;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 315446FE1EC1C3A8009FEB1A /* Build configuration list for PBXProject "NewProject" */;
@@ -153,6 +191,7 @@
 			projectRoot = "";
 			targets = (
 				315447021EC1C3A8009FEB1A /* NewProject */,
+				315850851EE508F4003B37BD /* Shall */,
 			);
 		};
 /* End PBXProject section */
@@ -165,6 +204,7 @@
 				315447161EC1C3A8009FEB1A /* LaunchScreen.storyboard in Resources */,
 				310277261ECAAAC000F6B069 /* ClockNumberController.xib in Resources */,
 				315447131EC1C3A8009FEB1A /* Assets.xcassets in Resources */,
+				3158507C1EE50660003B37BD /* Script.sh in Resources */,
 				3102772B1ED2806900F6B069 /* SecondController.xib in Resources */,
 				315447111EC1C3A8009FEB1A /* Main.storyboard in Resources */,
 				310277211ECA89FD00F6B069 /* beautiful.jpeg in Resources */,
@@ -172,6 +212,35 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3158508B1EE65465003B37BD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Dump of variables\"\necho \"PRODUCT_NAME=${PRODUCT_NAME}\"\necho \"The action being performed on the current target,such as build or clean.\"\necho \"ACTION=${ACTION}\"\necho \"The variations-debug,profile or normal-that Xcode is creating for the product being built.\"\necho \"BUILD_VARIANTS=${BUILD_VARIANTS}\"\necho \"The name of the project containing the tartget that is being build.\"\necho \"PROJECT_NAME=$PROJECT_NAME\"\necho \"The name of the project being built, without any extension or suffix.\"\necho \"PROJECT_NAME=$PROJECT_NAME\"\necho \"The name of the target being built.\"\necho \"TARGET_NAME=$TARGET_NAME\"\necho \"The location of the target being built.\"\necho \"TARGET_BUILD_DIR=$TARGET_BUILD_DIR\"\necho \"The directory that holds the products created by building the tartgets in a project.\"\necho \"BUILD_PRODUCTS_DIR=$TARGET_BUILD_DIR\"\necho \"The directory that holds intermediate files for a specific target.\"\necho \"TEMP_FILES_DIR=$TARGET_BUILD_DIR\"\necho \"The directory that holds intermediate source files generated by the Compile Source build phase\"\necho \"DERIVED_FILES_DIR=$TARGET_BUILD_DIR\"\necho \"The location of the installed product.\"\necho \"INSTALL_DIR=$TARGET_BUILD_DIR\"";
+		};
+		3158508C1EE683C7003B37BD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#$(SRCROOT)/NewProject/Script.sh\n/Users/fan/Desktop/NewProject/NewProject/Script.sh\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		315446FF1EC1C3A8009FEB1A /* Sources */ = {
@@ -188,6 +257,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3158508A1EE50984003B37BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 315850851EE508F4003B37BD /* Shall */;
+			targetProxy = 315850891EE50984003B37BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3154470F1EC1C3A8009FEB1A /* Main.storyboard */ = {
@@ -249,7 +326,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -290,7 +367,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -321,6 +398,31 @@
 			};
 			name = Release;
 		};
+		315850871EE508F4003B37BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = VW8U9YA9E8;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		315850881EE508F4003B37BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = VW8U9YA9E8;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -341,6 +443,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		315850861EE508F4003B37BD /* Build configuration list for PBXLegacyTarget "Shall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				315850871EE508F4003B37BD /* Debug */,
+				315850881EE508F4003B37BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

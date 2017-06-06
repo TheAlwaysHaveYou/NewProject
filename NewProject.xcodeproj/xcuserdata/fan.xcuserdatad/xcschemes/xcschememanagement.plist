@@ -9,10 +9,35 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>Shall.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>315447021EC1C3A8009FEB1A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3158500C1EDFFAAA003B37BD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>315850241EE103C3003B37BD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3158507E1EE50760003B37BD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>315850851EE508F4003B37BD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
