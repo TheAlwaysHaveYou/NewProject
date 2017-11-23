@@ -19,16 +19,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    self.window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
-    UIViewController *viewController1 = [[ClockNumberController alloc] init];
-    viewController1.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"第一页" image:nil tag:1];
-    UIViewController *viewController2 = [[SecondController alloc] init];
-    viewController2.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"第二页" image:nil tag:2];
-    UITabBarController *tabBarController = [[UITabBarController alloc] init];
-    tabBarController.viewControllers = @[viewController1, viewController2];
-    tabBarController.delegate = self;
-    self.window.rootViewController = tabBarController;
-    [self.window makeKeyAndVisible];
+//    self.window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
+//    UIViewController *viewController1 = [[ClockNumberController alloc] init];
+//    viewController1.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"第一页" image:nil tag:1];
+//    UIViewController *viewController2 = [[SecondController alloc] init];
+//    viewController2.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"第二页" image:nil tag:2];
+//    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+//    tabBarController.viewControllers = @[viewController1, viewController2];
+//    tabBarController.delegate = self;
+//    self.window.rootViewController = tabBarController;
+//    [self.window makeKeyAndVisible];
     
     return YES;
 }

@@ -10,7 +10,7 @@
 #import <GLKit/GLKit.h>
 #import <OpenGLES/EAGL.h>
 #import "FKDLabel.h"
-
+#import "MyLottoCycleView.h"
 
 #define LIGHT_DIRECTION 0, 1, -0.5
 #define AMBIENT_LIGHT 0.5
@@ -43,9 +43,11 @@ typedef struct {
     
 //    [self _3DView];
     
-    [self CATextLayerForText];
+//    [self CATextLayerForText];
     
     
+    MyLottoCycleView *cycle = [[MyLottoCycleView alloc] initWithFrame:CGRectMake(0, 0, 400, 400) lottoArr:@[]];
+    [self.view addSubview:cycle];
     
     
 }
