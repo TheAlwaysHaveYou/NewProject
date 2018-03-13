@@ -11,6 +11,7 @@
 #import <OpenGLES/EAGL.h>
 #import "FKDLabel.h"
 #import "MyLottoCycleView.h"
+#import "CustomView.h"
 
 #define LIGHT_DIRECTION 0, 1, -0.5
 #define AMBIENT_LIGHT 0.5
@@ -35,6 +36,7 @@ typedef struct {
     
     MyName nn = {1,""};
     nn.age = 123;
+    
 //    FKDLabel *label = [[FKDLabel alloc] init];
     
 //    [self separaterImageForViewLayer];
@@ -46,9 +48,23 @@ typedef struct {
 //    [self CATextLayerForText];
     
     
-    MyLottoCycleView *cycle = [[MyLottoCycleView alloc] initWithFrame:CGRectMake(0, 0, 400, 400) lottoArr:@[]];
-    [self.view addSubview:cycle];
     
+    
+    [self codeAnimation];
+    
+}
+
+- (void)codeAnimation {
+    
+    CustomView *view = [[CustomView alloc] initWithFrame:CGRectMake(0, 0, 300, 300)];
+    
+    [self.view addSubview:view];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [view addUntitled1AnimationCompletionBlock:^(BOOL finished) {
+            NSLog(@"动画做完了");
+        }];
+    });
     
 }
 

@@ -7,6 +7,7 @@
 //
 
 #import "CustomImageController.h"
+#import "NSString+Emojize.h"
 
 @interface CustomImageController ()
 
@@ -18,8 +19,19 @@
     [super viewDidLoad];
     
     
-    [self creatSHuiyin:photoImage];
+//    [self creatSHuiyin:photoImage];
+    
+    [self creatMutableData:@[],@{},@""];
 }
+
+
+//可变参数
+
+- (void)creatMutableData:(id)str, ... {
+    
+    
+}
+
 
 - (void)creatSHuiyin:(UIImage *)image {
     UIImage *water = [self addWaterMarkTextWithOriginalImage:image waterMarkText:@"@这是加的水印"];
@@ -46,5 +58,31 @@
     return newImage;
 }
 
+
+
++ (NSString *)emojiStringFromString:(NSString *)text {
+    return [self convertString:text toEmoji:YES];
+}
+
++ (NSString *)plainStringFromEmojiString:(NSString *)emojiText {
+    return [self convertString:emojiText toEmoji:NO];
+}
+
++ (NSString *)convertString:(NSString *)text toEmoji:(BOOL)toEmoji {
+    if (!text) {
+        return nil;
+    }
+    NSMutableString *emojiText = [[NSMutableString alloc] initWithString:text];
+    for (NSString *code in[[NSString emojiAliases] allKeys]) {
+        NSString *emoji = [NSString emojiAliases][code];
+        if (toEmoji) {
+            [emojiText replaceOccurrencesOfString:code withString:emoji options:NSLiteralSearch range:NSMakeRange(0, emojiText.length)];
+        }
+        else {
+            [emojiText replaceOccurrencesOfString:emoji withString:code options:NSLiteralSearch range:NSMakeRange(0, emojiText.length)];
+        }
+    }
+    return emojiText;
+}
 
 @end

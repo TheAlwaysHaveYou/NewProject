@@ -22,7 +22,10 @@
 		315447161EC1C3A8009FEB1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 315447141EC1C3A8009FEB1A /* LaunchScreen.storyboard */; };
 		3158507C1EE50660003B37BD /* Script.sh in Resources */ = {isa = PBXBuildFile; fileRef = 3158507B1EE50660003B37BD /* Script.sh */; };
 		31D877E11F38711400061711 /* ScrollSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D877E01F38711400061711 /* ScrollSectionController.m */; };
+		31ED67B21FD7C7250002E386 /* QCMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 31ED67AE1FD7C7240002E386 /* QCMethod.m */; };
+		31ED67B31FD7C7250002E386 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31ED67B01FD7C7240002E386 /* CustomView.m */; };
 		31FCED781FC69FB2007460EC /* CustomImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FCED771FC69FB2007460EC /* CustomImageController.m */; };
+		31FCED821FC80C91007460EC /* NSString+Emojize.m in Sources */ = {isa = PBXBuildFile; fileRef = 31FCED811FC80C91007460EC /* NSString+Emojize.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +63,15 @@
 		3158507B1EE50660003B37BD /* Script.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = Script.sh; sourceTree = "<group>"; };
 		31D877DF1F38711400061711 /* ScrollSectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollSectionController.h; sourceTree = "<group>"; };
 		31D877E01F38711400061711 /* ScrollSectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollSectionController.m; sourceTree = "<group>"; };
+		31ED67AE1FD7C7240002E386 /* QCMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCMethod.m; sourceTree = "<group>"; };
+		31ED67AF1FD7C7240002E386 /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
+		31ED67B01FD7C7240002E386 /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
+		31ED67B11FD7C7250002E386 /* QCMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCMethod.h; sourceTree = "<group>"; };
 		31FCED761FC69FB2007460EC /* CustomImageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomImageController.h; sourceTree = "<group>"; };
 		31FCED771FC69FB2007460EC /* CustomImageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomImageController.m; sourceTree = "<group>"; };
+		31FCED7F1FC80C91007460EC /* emojis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = emojis.h; sourceTree = "<group>"; };
+		31FCED801FC80C91007460EC /* NSString+Emojize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Emojize.h"; sourceTree = "<group>"; };
+		31FCED811FC80C91007460EC /* NSString+Emojize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Emojize.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +123,8 @@
 				3108D1801FAEEB7400DC5596 /* MyLottoCycleView.m */,
 				31FCED761FC69FB2007460EC /* CustomImageController.h */,
 				31FCED771FC69FB2007460EC /* CustomImageController.m */,
+				31ED67A71FD7C1FA0002E386 /* CodeAnimation */,
+				31FCED7E1FC80C91007460EC /* NSStringEmojize */,
 				310277201ECA89FD00F6B069 /* beautiful.jpeg */,
 				3154470F1EC1C3A8009FEB1A /* Main.storyboard */,
 				315447121EC1C3A8009FEB1A /* Assets.xcassets */,
@@ -129,6 +141,27 @@
 				315447071EC1C3A8009FEB1A /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		31ED67A71FD7C1FA0002E386 /* CodeAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				31ED67AF1FD7C7240002E386 /* CustomView.h */,
+				31ED67B01FD7C7240002E386 /* CustomView.m */,
+				31ED67B11FD7C7250002E386 /* QCMethod.h */,
+				31ED67AE1FD7C7240002E386 /* QCMethod.m */,
+			);
+			path = CodeAnimation;
+			sourceTree = "<group>";
+		};
+		31FCED7E1FC80C91007460EC /* NSStringEmojize */ = {
+			isa = PBXGroup;
+			children = (
+				31FCED7F1FC80C91007460EC /* emojis.h */,
+				31FCED801FC80C91007460EC /* NSString+Emojize.h */,
+				31FCED811FC80C91007460EC /* NSString+Emojize.m */,
+			);
+			path = NSStringEmojize;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,10 +300,13 @@
 				310277251ECAAAC000F6B069 /* ClockNumberController.m in Sources */,
 				3154470B1EC1C3A8009FEB1A /* AppDelegate.m in Sources */,
 				3102772A1ED2806900F6B069 /* SecondController.m in Sources */,
+				31ED67B31FD7C7250002E386 /* CustomView.m in Sources */,
 				31FCED781FC69FB2007460EC /* CustomImageController.m in Sources */,
 				3102771D1EC5A43700F6B069 /* FKDLabel.m in Sources */,
+				31ED67B21FD7C7250002E386 /* QCMethod.m in Sources */,
 				31D877E11F38711400061711 /* ScrollSectionController.m in Sources */,
 				315447081EC1C3A8009FEB1A /* main.m in Sources */,
+				31FCED821FC80C91007460EC /* NSString+Emojize.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

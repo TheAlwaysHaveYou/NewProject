@@ -152,7 +152,6 @@ CGAffineTransform  GetCGAffineTransformRotateAroundPoint(float centerX, float ce
     self.nameLabel.numberOfLines = 0;
     self.nameLabel.backgroundColor = [UIColor greenColor];
     [self addSubview:self.nameLabel];
-    
     self.imgV = [[UIImageView alloc] initWithFrame:CGRectMake(0, 30, 30, 30)];
     self.imgV.backgroundColor = [UIColor redColor];
     [self addSubview:self.imgV];
