@@ -33,7 +33,7 @@
     
     
     NSLog(@"嘿嘿嘿  ----- CI集成测试");
-    
+    NSLog(@"再次");
     return YES;
 }
 
