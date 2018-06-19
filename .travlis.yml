@@ -6,6 +6,6 @@ xcode_project: NewProject.xcodeproj
 
 xcode_scheme: NewProjectTests
 
-Script:
+#Script:
 
- - xctool -project NewProject.xcodeproj -scheme NewProject -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+ #- xctool -project NewProject.xcodeproj -scheme NewProject -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
