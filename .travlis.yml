@@ -1,3 +1,7 @@
 language: objective-c
 
 osx_image: xcode9
+
+xcode_project: NewProject.xcodeproj
+
+xcode_scheme: NewProjectTests
