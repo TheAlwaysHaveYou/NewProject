@@ -1,10 +1,10 @@
 language: objective-c
 
-osx_image: xcode9
-
-xcode_project: NewProject.xcodeproj
+xcode_project: ./NewProject.xcodeproj
 
 xcode_scheme: NewProjectTests
+
+osx_image: xcode9
 
 #Script:
 
