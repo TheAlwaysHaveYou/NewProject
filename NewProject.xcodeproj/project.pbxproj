@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,7 @@
 		315447131EC1C3A8009FEB1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 315447121EC1C3A8009FEB1A /* Assets.xcassets */; };
 		315447161EC1C3A8009FEB1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 315447141EC1C3A8009FEB1A /* LaunchScreen.storyboard */; };
 		3158507C1EE50660003B37BD /* Script.sh in Resources */ = {isa = PBXBuildFile; fileRef = 3158507B1EE50660003B37BD /* Script.sh */; };
+		315BA7C320E0BB07007D774D /* EventKitController.m in Sources */ = {isa = PBXBuildFile; fileRef = 315BA7C220E0BB07007D774D /* EventKitController.m */; };
 		31D877E11F38711400061711 /* ScrollSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D877E01F38711400061711 /* ScrollSectionController.m */; };
 		31ED67B21FD7C7250002E386 /* QCMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 31ED67AE1FD7C7240002E386 /* QCMethod.m */; };
 		31ED67B31FD7C7250002E386 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31ED67B01FD7C7240002E386 /* CustomView.m */; };
@@ -61,6 +62,8 @@
 		315447151EC1C3A8009FEB1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		315447171EC1C3A8009FEB1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3158507B1EE50660003B37BD /* Script.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = Script.sh; sourceTree = "<group>"; };
+		315BA7C120E0BB07007D774D /* EventKitController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventKitController.h; sourceTree = "<group>"; };
+		315BA7C220E0BB07007D774D /* EventKitController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventKitController.m; sourceTree = "<group>"; };
 		31D877DF1F38711400061711 /* ScrollSectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollSectionController.h; sourceTree = "<group>"; };
 		31D877E01F38711400061711 /* ScrollSectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollSectionController.m; sourceTree = "<group>"; };
 		31ED67AE1FD7C7240002E386 /* QCMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCMethod.m; sourceTree = "<group>"; };
@@ -123,6 +126,8 @@
 				3108D1801FAEEB7400DC5596 /* MyLottoCycleView.m */,
 				31FCED761FC69FB2007460EC /* CustomImageController.h */,
 				31FCED771FC69FB2007460EC /* CustomImageController.m */,
+				315BA7C120E0BB07007D774D /* EventKitController.h */,
+				315BA7C220E0BB07007D774D /* EventKitController.m */,
 				31ED67A71FD7C1FA0002E386 /* CodeAnimation */,
 				31FCED7E1FC80C91007460EC /* NSStringEmojize */,
 				310277201ECA89FD00F6B069 /* beautiful.jpeg */,
@@ -226,7 +231,7 @@
 				};
 			};
 			buildConfigurationList = 315446FE1EC1C3A8009FEB1A /* Build configuration list for PBXProject "NewProject" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -301,6 +306,7 @@
 				3154470B1EC1C3A8009FEB1A /* AppDelegate.m in Sources */,
 				3102772A1ED2806900F6B069 /* SecondController.m in Sources */,
 				31ED67B31FD7C7250002E386 /* CustomView.m in Sources */,
+				315BA7C320E0BB07007D774D /* EventKitController.m in Sources */,
 				31FCED781FC69FB2007460EC /* CustomImageController.m in Sources */,
 				3102771D1EC5A43700F6B069 /* FKDLabel.m in Sources */,
 				31ED67B21FD7C7250002E386 /* QCMethod.m in Sources */,

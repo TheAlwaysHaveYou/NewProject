@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "ClockNumberController.h"
 #import "SecondController.h"
+#import "EventKitController.h"
 
 @interface AppDelegate ()<UITabBarControllerDelegate>
 
@@ -19,7 +20,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-//    self.window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
+    self.window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
 //    UIViewController *viewController1 = [[ClockNumberController alloc] init];
 //    viewController1.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"第一页" image:nil tag:1];
 //    UIViewController *viewController2 = [[SecondController alloc] init];
@@ -28,12 +29,12 @@
 //    tabBarController.viewControllers = @[viewController1, viewController2];
 //    tabBarController.delegate = self;
 //    self.window.rootViewController = tabBarController;
-//    [self.window makeKeyAndVisible];
     
+    EventKitController *ek = [[EventKitController alloc] init];
+    self.window.rootViewController = ek;
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     
-    
-    NSLog(@"嘿嘿嘿  ----- CI集成测试");
-    NSLog(@"再次");
     return YES;
 }
 
