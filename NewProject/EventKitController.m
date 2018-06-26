@@ -8,6 +8,7 @@
 
 #import "EventKitController.h"
 #import <EventKit/EventKit.h>
+#import "LEEAlert.h"
 
 @interface EventKitController ()
 
@@ -19,7 +20,24 @@
     [super viewDidLoad];
     
     
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    btn.backgroundColor = [UIColor blueColor];
+    [btn addTarget:self action:@selector(showAlerView:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
     
+}
+
+- (void)showAlerView:(UIButton *)sender {
+    [LEEAlert alert].config.LeeAddAction(^(LEEAction *action) {
+        action.title = @"2323";
+        action.clickBlock = ^{
+            NSLog(@"嘿嘿嘿");
+        };
+    }).LeeShow();
+    
+}
+
+- (void)eventKitTest {
     EKEventStore *store = [[EKEventStore alloc] init];
     if ([EKEventStore authorizationStatusForEntityType:EKEntityTypeEvent] == EKAuthorizationStatusAuthorized) {
         EKCalendar *calendar = [EKCalendar calendarForEntityType:EKEntityTypeEvent eventStore:store];
@@ -35,7 +53,7 @@
                 event.startDate = [NSDate date];
                 event.endDate = [NSDate dateWithTimeIntervalSinceNow:24*60*60];
                 [event setCalendar:[store defaultCalendarForNewEvents]];
-
+                
                 NSError *error;
                 
                 [store saveEvent:event span:EKSpanThisEvent error:&error];
@@ -47,10 +65,10 @@
                 
             }
             
-//            NSDate *endDate = [[NSDate date] dateByAddingTimeInterval:24*60*60];
-//            NSPredicate *predicate = [store predicateForEventsWithStartDate:[NSDate date] endDate:endDate calendars:@[calendar]];
-//
-//            [store eventsMatchingPredicate:predicate];
+            //            NSDate *endDate = [[NSDate date] dateByAddingTimeInterval:24*60*60];
+            //            NSPredicate *predicate = [store predicateForEventsWithStartDate:[NSDate date] endDate:endDate calendars:@[calendar]];
+            //
+            //            [store eventsMatchingPredicate:predicate];
             
             
         }
@@ -65,7 +83,6 @@
             }
         }];
     }
-    
 }
 
 @end
