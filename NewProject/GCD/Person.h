@@ -1,0 +1,15 @@
+//
+//  Person.h
+//  NewProject
+//
+//  Created by 范魁东 on 2018/6/27.
+//  Copyright © 2018年 fan. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface Person : NSObject
+
+@property (nonatomic , strong) NSString *name;
+
+@end

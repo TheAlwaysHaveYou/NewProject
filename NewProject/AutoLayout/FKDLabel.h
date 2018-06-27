@@ -14,6 +14,4 @@
 
 - (instancetype)initWithFrame:(CGRect)frame;
 
-
-
 @end

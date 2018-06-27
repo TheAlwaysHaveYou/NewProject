@@ -9,6 +9,7 @@
 #import "EventKitController.h"
 #import <EventKit/EventKit.h>
 #import "LEEAlert.h"
+#import "FKDLabel.h"
 
 @interface EventKitController ()
 
@@ -20,7 +21,9 @@
     [super viewDidLoad];
     
     
-    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    
+    
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 500, 100, 100)];
     btn.backgroundColor = [UIColor blueColor];
     [btn addTarget:self action:@selector(showAlerView:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];

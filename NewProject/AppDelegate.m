@@ -10,6 +10,7 @@
 #import "ClockNumberController.h"
 #import "SecondController.h"
 #import "EventKitController.h"
+#import "AutoLayoutController.h"
 
 @interface AppDelegate ()<UITabBarControllerDelegate>
 
@@ -30,8 +31,11 @@
 //    tabBarController.delegate = self;
 //    self.window.rootViewController = tabBarController;
     
-    EventKitController *ek = [[EventKitController alloc] init];
-    self.window.rootViewController = ek;
+    
+//    EventKitController *vc = [[EventKitController alloc] init];
+    
+    AutoLayoutController *vc = [[AutoLayoutController alloc] init];
+    self.window.rootViewController = vc;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
