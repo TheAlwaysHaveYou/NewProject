@@ -25,6 +25,9 @@
 		315BA7EA20E36F69007D774D /* AutoLayoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 315BA7E920E36F69007D774D /* AutoLayoutController.m */; };
 		315BA7EF20E37268007D774D /* GCDController.m in Sources */ = {isa = PBXBuildFile; fileRef = 315BA7EE20E37268007D774D /* GCDController.m */; };
 		315BA7F220E372C3007D774D /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 315BA7F120E372C3007D774D /* Person.m */; };
+		315BA7F520E37A68007D774D /* AutoOneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 315BA7F420E37A68007D774D /* AutoOneView.m */; };
+		315BA7F920E4B7C9007D774D /* SizeClassController.m in Sources */ = {isa = PBXBuildFile; fileRef = 315BA7F720E4B7C9007D774D /* SizeClassController.m */; };
+		315BA7FA20E4B7C9007D774D /* SizeClassController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 315BA7F820E4B7C9007D774D /* SizeClassController.xib */; };
 		31D877E11F38711400061711 /* ScrollSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D877E01F38711400061711 /* ScrollSectionController.m */; };
 		31ED67B21FD7C7250002E386 /* QCMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 31ED67AE1FD7C7240002E386 /* QCMethod.m */; };
 		31ED67B31FD7C7250002E386 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31ED67B01FD7C7240002E386 /* CustomView.m */; };
@@ -75,6 +78,11 @@
 		315BA7EE20E37268007D774D /* GCDController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDController.m; sourceTree = "<group>"; };
 		315BA7F020E372C3007D774D /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		315BA7F120E372C3007D774D /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		315BA7F320E37A68007D774D /* AutoOneView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoOneView.h; sourceTree = "<group>"; };
+		315BA7F420E37A68007D774D /* AutoOneView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoOneView.m; sourceTree = "<group>"; };
+		315BA7F620E4B7C9007D774D /* SizeClassController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SizeClassController.h; sourceTree = "<group>"; };
+		315BA7F720E4B7C9007D774D /* SizeClassController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SizeClassController.m; sourceTree = "<group>"; };
+		315BA7F820E4B7C9007D774D /* SizeClassController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SizeClassController.xib; sourceTree = "<group>"; };
 		31D877DF1F38711400061711 /* ScrollSectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollSectionController.h; sourceTree = "<group>"; };
 		31D877E01F38711400061711 /* ScrollSectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollSectionController.m; sourceTree = "<group>"; };
 		31ED67AE1FD7C7240002E386 /* QCMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCMethod.m; sourceTree = "<group>"; };
@@ -176,8 +184,13 @@
 			children = (
 				315BA7E820E36F69007D774D /* AutoLayoutController.h */,
 				315BA7E920E36F69007D774D /* AutoLayoutController.m */,
+				315BA7F620E4B7C9007D774D /* SizeClassController.h */,
+				315BA7F720E4B7C9007D774D /* SizeClassController.m */,
+				315BA7F820E4B7C9007D774D /* SizeClassController.xib */,
 				3102771B1EC5A43700F6B069 /* FKDLabel.h */,
 				3102771C1EC5A43700F6B069 /* FKDLabel.m */,
+				315BA7F320E37A68007D774D /* AutoOneView.h */,
+				315BA7F420E37A68007D774D /* AutoOneView.m */,
 			);
 			path = AutoLayout;
 			sourceTree = "<group>";
@@ -324,6 +337,7 @@
 				315447131EC1C3A8009FEB1A /* Assets.xcassets in Resources */,
 				3158507C1EE50660003B37BD /* Script.sh in Resources */,
 				3102772B1ED2806900F6B069 /* SecondController.xib in Resources */,
+				315BA7FA20E4B7C9007D774D /* SizeClassController.xib in Resources */,
 				315447111EC1C3A8009FEB1A /* Main.storyboard in Resources */,
 				310277211ECA89FD00F6B069 /* beautiful.jpeg in Resources */,
 			);
@@ -414,8 +428,10 @@
 				315BA7F220E372C3007D774D /* Person.m in Sources */,
 				31ED67B21FD7C7250002E386 /* QCMethod.m in Sources */,
 				31D877E11F38711400061711 /* ScrollSectionController.m in Sources */,
+				315BA7F920E4B7C9007D774D /* SizeClassController.m in Sources */,
 				315447081EC1C3A8009FEB1A /* main.m in Sources */,
 				315BA7EF20E37268007D774D /* GCDController.m in Sources */,
+				315BA7F520E37A68007D774D /* AutoOneView.m in Sources */,
 				31FCED821FC80C91007460EC /* NSString+Emojize.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -546,6 +562,7 @@
 				DEVELOPMENT_TEAM = VW8U9YA9E8;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = NewProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FanNewProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -560,6 +577,7 @@
 				DEVELOPMENT_TEAM = VW8U9YA9E8;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = NewProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FanNewProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
