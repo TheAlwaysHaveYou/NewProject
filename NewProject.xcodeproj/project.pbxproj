@@ -28,6 +28,8 @@
 		315BA7F520E37A68007D774D /* AutoOneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 315BA7F420E37A68007D774D /* AutoOneView.m */; };
 		315BA7F920E4B7C9007D774D /* SizeClassController.m in Sources */ = {isa = PBXBuildFile; fileRef = 315BA7F720E4B7C9007D774D /* SizeClassController.m */; };
 		315BA7FA20E4B7C9007D774D /* SizeClassController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 315BA7F820E4B7C9007D774D /* SizeClassController.xib */; };
+		315BA82820E4DD91007D774D /* CoreAnimtionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 315BA82720E4DD91007D774D /* CoreAnimtionController.m */; };
+		315BA82B20E4DE38007D774D /* DrawRectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 315BA82A20E4DE38007D774D /* DrawRectView.m */; };
 		31D877E11F38711400061711 /* ScrollSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D877E01F38711400061711 /* ScrollSectionController.m */; };
 		31ED67B21FD7C7250002E386 /* QCMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 31ED67AE1FD7C7240002E386 /* QCMethod.m */; };
 		31ED67B31FD7C7250002E386 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31ED67B01FD7C7240002E386 /* CustomView.m */; };
@@ -83,6 +85,10 @@
 		315BA7F620E4B7C9007D774D /* SizeClassController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SizeClassController.h; sourceTree = "<group>"; };
 		315BA7F720E4B7C9007D774D /* SizeClassController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SizeClassController.m; sourceTree = "<group>"; };
 		315BA7F820E4B7C9007D774D /* SizeClassController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SizeClassController.xib; sourceTree = "<group>"; };
+		315BA82620E4DD91007D774D /* CoreAnimtionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreAnimtionController.h; sourceTree = "<group>"; };
+		315BA82720E4DD91007D774D /* CoreAnimtionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreAnimtionController.m; sourceTree = "<group>"; };
+		315BA82920E4DE38007D774D /* DrawRectView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawRectView.h; sourceTree = "<group>"; };
+		315BA82A20E4DE38007D774D /* DrawRectView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawRectView.m; sourceTree = "<group>"; };
 		31D877DF1F38711400061711 /* ScrollSectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollSectionController.h; sourceTree = "<group>"; };
 		31D877E01F38711400061711 /* ScrollSectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollSectionController.m; sourceTree = "<group>"; };
 		31ED67AE1FD7C7240002E386 /* QCMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCMethod.m; sourceTree = "<group>"; };
@@ -156,6 +162,7 @@
 				3108D1801FAEEB7400DC5596 /* MyLottoCycleView.m */,
 				31FCED761FC69FB2007460EC /* CustomImageController.h */,
 				31FCED771FC69FB2007460EC /* CustomImageController.m */,
+				315BA82520E4DD6E007D774D /* CoreAnimation */,
 				315BA7EC20E37259007D774D /* GCD */,
 				315BA7E720E36DFF007D774D /* EventKit */,
 				315BA7E620E36DEE007D774D /* AutoLayout */,
@@ -213,6 +220,17 @@
 				315BA7F120E372C3007D774D /* Person.m */,
 			);
 			path = GCD;
+			sourceTree = "<group>";
+		};
+		315BA82520E4DD6E007D774D /* CoreAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				315BA82620E4DD91007D774D /* CoreAnimtionController.h */,
+				315BA82720E4DD91007D774D /* CoreAnimtionController.m */,
+				315BA82920E4DE38007D774D /* DrawRectView.h */,
+				315BA82A20E4DE38007D774D /* DrawRectView.m */,
+			);
+			path = CoreAnimation;
 			sourceTree = "<group>";
 		};
 		31ED67A71FD7C1FA0002E386 /* CodeAnimation */ = {
@@ -415,6 +433,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				315BA82B20E4DE38007D774D /* DrawRectView.m in Sources */,
 				3108D1811FAEEB7400DC5596 /* MyLottoCycleView.m in Sources */,
 				3154470E1EC1C3A8009FEB1A /* ViewController.m in Sources */,
 				310277251ECAAAC000F6B069 /* ClockNumberController.m in Sources */,
@@ -433,6 +452,7 @@
 				315BA7EF20E37268007D774D /* GCDController.m in Sources */,
 				315BA7F520E37A68007D774D /* AutoOneView.m in Sources */,
 				31FCED821FC80C91007460EC /* NSString+Emojize.m in Sources */,
+				315BA82820E4DD91007D774D /* CoreAnimtionController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

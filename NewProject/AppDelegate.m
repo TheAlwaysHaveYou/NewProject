@@ -11,6 +11,7 @@
 #import "SecondController.h"
 #import "EventKitController.h"
 #import "AutoLayoutController.h"
+#import "CoreAnimtionController.h"
 
 @interface AppDelegate ()<UITabBarControllerDelegate>
 
@@ -33,8 +34,8 @@
     
     
 //    EventKitController *vc = [[EventKitController alloc] init];
-    
-    AutoLayoutController *vc = [[AutoLayoutController alloc] init];
+//    AutoLayoutController *vc = [[AutoLayoutController alloc] init];
+    CoreAnimtionController *vc = [[CoreAnimtionController alloc] init];
     self.window.rootViewController = vc;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
