@@ -30,6 +30,7 @@
 		315BA7FA20E4B7C9007D774D /* SizeClassController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 315BA7F820E4B7C9007D774D /* SizeClassController.xib */; };
 		315BA82820E4DD91007D774D /* CoreAnimtionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 315BA82720E4DD91007D774D /* CoreAnimtionController.m */; };
 		315BA82B20E4DE38007D774D /* DrawRectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 315BA82A20E4DE38007D774D /* DrawRectView.m */; };
+		31D3CC1420EF4EEA0037B496 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31D3CC1320EF4EEA0037B496 /* AFNetworking.framework */; };
 		31D877E11F38711400061711 /* ScrollSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D877E01F38711400061711 /* ScrollSectionController.m */; };
 		31ED67B21FD7C7250002E386 /* QCMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 31ED67AE1FD7C7240002E386 /* QCMethod.m */; };
 		31ED67B31FD7C7250002E386 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31ED67B01FD7C7240002E386 /* CustomView.m */; };
@@ -89,6 +90,7 @@
 		315BA82720E4DD91007D774D /* CoreAnimtionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreAnimtionController.m; sourceTree = "<group>"; };
 		315BA82920E4DE38007D774D /* DrawRectView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawRectView.h; sourceTree = "<group>"; };
 		315BA82A20E4DE38007D774D /* DrawRectView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawRectView.m; sourceTree = "<group>"; };
+		31D3CC1320EF4EEA0037B496 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
 		31D877DF1F38711400061711 /* ScrollSectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollSectionController.h; sourceTree = "<group>"; };
 		31D877E01F38711400061711 /* ScrollSectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollSectionController.m; sourceTree = "<group>"; };
 		31ED67AE1FD7C7240002E386 /* QCMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCMethod.m; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B229818F494397FE73EE892E /* Pods_NewProject.framework in Frameworks */,
+				31D3CC1420EF4EEA0037B496 /* AFNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +122,7 @@
 		130F06ACFBC9AEC2C21B7926 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				31D3CC1320EF4EEA0037B496 /* AFNetworking.framework */,
 				ECFFC5FDE448246B0810B71A /* Pods_NewProject.framework */,
 			);
 			name = Frameworks;
@@ -294,6 +298,7 @@
 				3158508B1EE65465003B37BD /* ShellScript */,
 				3158508C1EE683C7003B37BD /* ShellScript */,
 				FF57A0CFACBEE89C81103953 /* [CP] Embed Pods Frameworks */,
+				31D3CC1520EF4FA80037B496 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -401,12 +406,27 @@
 			files = (
 			);
 			inputPaths = (
+				"$(SRCROOT)/NewProject/Script.sh",
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#$(SRCROOT)/NewProject/Script.sh\n/Users/fan/Desktop/NewProject/NewProject/Script.sh\n";
+			shellScript = "#$(SRCROOT)/NewProject/Script.sh\n/Users/fan/Desktop/NewProject/NewProject/Script.sh";
+		};
+		31D3CC1520EF4FA80037B496 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/AFNetworking.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
 		FF57A0CFACBEE89C81103953 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -581,6 +601,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VW8U9YA9E8;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = NewProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -596,6 +620,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VW8U9YA9E8;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = NewProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

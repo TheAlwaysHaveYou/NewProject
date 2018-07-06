@@ -3,3 +3,5 @@ Pods
 *.xcworkspace
 Podfile.lock
 xcuserdata
+Cartfile.resolved
+Carthage

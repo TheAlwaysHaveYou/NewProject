@@ -48,8 +48,6 @@ typedef struct {
 //    [self CATextLayerForText];
     
     
-    
-    
     [self codeAnimation];
     
 }

@@ -13,6 +13,9 @@
 #import "AutoLayoutController.h"
 #import "CoreAnimtionController.h"
 
+#import <AFNetworking/AFNetworking.h>
+
+
 @interface AppDelegate ()<UITabBarControllerDelegate>
 
 @end
@@ -39,7 +42,6 @@
     self.window.rootViewController = vc;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    
     return YES;
 }
 
