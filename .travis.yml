@@ -1,2 +1,8 @@
 language: objective-c
 osx_image: xcode9
+
+
+#上传到 Codecov
+after_success:
+    - codecov
+    - bash <(curl -s https://codecov.io/bash) -t e8e7de3b-db21-4ce1-b318-2d8eb7a963bc

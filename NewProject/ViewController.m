@@ -37,6 +37,9 @@ typedef struct {
     MyName nn = {1,""};
     nn.age = 123;
     
+    
+    //6787899
+    
 //    FKDLabel *label = [[FKDLabel alloc] init];
     
 //    [self separaterImageForViewLayer];
