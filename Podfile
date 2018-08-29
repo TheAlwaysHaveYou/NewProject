@@ -5,5 +5,6 @@ target 'NewProject' do
 	use_frameworks!
 
 	pod 'LEEAlert'
-
+    pod 'YYKit'
+    
 end

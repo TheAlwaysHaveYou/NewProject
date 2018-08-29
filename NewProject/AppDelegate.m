@@ -12,7 +12,7 @@
 #import "EventKitController.h"
 #import "AutoLayoutController.h"
 #import "CoreAnimtionController.h"
-
+#import "ProxyViewController.h"
 #import <AFNetworking/AFNetworking.h>
 
 
@@ -38,24 +38,21 @@
     
 //    EventKitController *vc = [[EventKitController alloc] init];
 //    AutoLayoutController *vc = [[AutoLayoutController alloc] init];
-    CoreAnimtionController *vc = [[CoreAnimtionController alloc] init];
+//    CoreAnimtionController *vc = [[CoreAnimtionController alloc] init];
+    ProxyViewController *vc = [[ProxyViewController alloc] init];
     self.window.rootViewController = vc;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
     
-    for (int i = 0; i < 100; i ++) {
-        //------
-    }
-    
     return YES;
 }
 
-- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
-    CATransition *transition = [CATransition animation];
-    transition.type = kCATransitionFade;
-    [tabBarController.view.layer addAnimation:transition forKey:nil];
-}
+//- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
+//    CATransition *transition = [CATransition animation];
+//    transition.type = kCATransitionFade;
+//    [tabBarController.view.layer addAnimation:transition forKey:nil];
+//}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
