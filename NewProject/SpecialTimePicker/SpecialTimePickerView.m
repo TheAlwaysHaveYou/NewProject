@@ -319,4 +319,22 @@
     return @[@"00",@"10",@"20",@"30",@"40",@"50"];
 }
 
+
+- (NSArray *)textWithNumberArray:(NSArray *)originArr {
+    NSMutableArray *firstArr = [NSMutableArray array];
+    NSMutableArray *lastArr = [NSMutableArray array];
+    
+    for (id obj in originArr) {
+        if ([obj integerValue]%2 == 0) {
+            [firstArr addObject:obj];
+        }else {
+            [lastArr addObject:obj];
+        }
+    }
+    
+    [firstArr addObjectsFromArray:lastArr];
+    return firstArr;
+}
+
+
 @end

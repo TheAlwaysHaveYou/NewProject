@@ -15,6 +15,7 @@
 		3102772A1ED2806900F6B069 /* SecondController.m in Sources */ = {isa = PBXBuildFile; fileRef = 310277281ED2806900F6B069 /* SecondController.m */; };
 		3102772B1ED2806900F6B069 /* SecondController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 310277291ED2806900F6B069 /* SecondController.xib */; };
 		3108D1811FAEEB7400DC5596 /* MyLottoCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3108D1801FAEEB7400DC5596 /* MyLottoCycleView.m */; };
+		313D26C62153C82E00DA8CD7 /* FKD.m in Sources */ = {isa = PBXBuildFile; fileRef = 313D26C52153C82E00DA8CD7 /* FKD.m */; };
 		315447081EC1C3A8009FEB1A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 315447071EC1C3A8009FEB1A /* main.m */; };
 		3154470B1EC1C3A8009FEB1A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3154470A1EC1C3A8009FEB1A /* AppDelegate.m */; };
 		3154470E1EC1C3A8009FEB1A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3154470D1EC1C3A8009FEB1A /* ViewController.m */; };
@@ -69,6 +70,8 @@
 		310277291ED2806900F6B069 /* SecondController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondController.xib; sourceTree = "<group>"; };
 		3108D17F1FAEEB7400DC5596 /* MyLottoCycleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyLottoCycleView.h; sourceTree = "<group>"; };
 		3108D1801FAEEB7400DC5596 /* MyLottoCycleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyLottoCycleView.m; sourceTree = "<group>"; };
+		313D26C42153C82E00DA8CD7 /* FKD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKD.h; sourceTree = "<group>"; };
+		313D26C52153C82E00DA8CD7 /* FKD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKD.m; sourceTree = "<group>"; };
 		315447031EC1C3A8009FEB1A /* NewProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		315447071EC1C3A8009FEB1A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		315447091EC1C3A8009FEB1A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -149,6 +152,8 @@
 			children = (
 				3101A1252133F2DF00A70334 /* SpecialTimePickerView.h */,
 				3101A1262133F2DF00A70334 /* SpecialTimePickerView.m */,
+				313D26C42153C82E00DA8CD7 /* FKD.h */,
+				313D26C52153C82E00DA8CD7 /* FKD.m */,
 			);
 			path = SpecialTimePicker;
 			sourceTree = "<group>";
@@ -478,18 +483,22 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-NewProject/Pods-NewProject-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-NewProject/Pods-NewProject-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Graver/Graver.framework",
 				"${BUILT_PRODUCTS_DIR}/LEEAlert/LEEAlert.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Graver.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LEEAlert.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NewProject/Pods-NewProject-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NewProject/Pods-NewProject-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -500,6 +509,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				315BA82B20E4DE38007D774D /* DrawRectView.m in Sources */,
+				313D26C62153C82E00DA8CD7 /* FKD.m in Sources */,
 				3166BC4C212BEEFE0052EB3A /* FKDMethodB.m in Sources */,
 				3108D1811FAEEB7400DC5596 /* MyLottoCycleView.m in Sources */,
 				3154470E1EC1C3A8009FEB1A /* ViewController.m in Sources */,
@@ -659,7 +669,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = NewProject/PrefixHeader.pch;
 				INFOPLIST_FILE = NewProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FanNewProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -680,7 +690,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = NewProject/PrefixHeader.pch;
 				INFOPLIST_FILE = NewProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FanNewProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
