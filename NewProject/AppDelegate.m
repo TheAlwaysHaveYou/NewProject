@@ -40,7 +40,7 @@
 //    AutoLayoutController *vc = [[AutoLayoutController alloc] init];
 //    CoreAnimtionController *vc = [[CoreAnimtionController alloc] init];
     ProxyViewController *vc = [[ProxyViewController alloc] init];
-    self.window.rootViewController = vc;
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     

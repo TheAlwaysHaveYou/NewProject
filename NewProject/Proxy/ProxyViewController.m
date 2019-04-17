@@ -9,10 +9,15 @@
 #import "ProxyViewController.h"
 #import "FKDProxy.h"
 #import "SpecialTimePickerView.h"
+#import <libkern/OSAtomic.h>
+#import <os/lock.h>
+#import "TempController.h"
 
 @interface ProxyViewController ()
 
 @property (nonatomic , strong) NSDate *currentDate;
+
+@property (nonatomic , assign) OSSpinLock lock;
 
 @end
 
@@ -30,9 +35,31 @@
     btn.backgroundColor = [UIColor blueColor];
     [btn addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
+    
 }
 
+
+
 - (void)btnAction:(UIButton *)sender {
+    TempController *vc = [[TempController alloc] init];
+    
+    [self.navigationController pushViewController:vc animated:YES];
+    
+    return;
+    
+    self.lock = OS_SPINLOCK_INIT;
+    
+    for (NSInteger i = 0; i < 5; i ++) {//五个窗口同时买票
+        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+            for (NSInteger x = 0; x < 10; x++) {
+                [self sellingTickets];
+            }
+        });
+    }
+    
+    return;
+    
+    
     @weakify(self)
     SpecialTimePickerView *pickerView = [[SpecialTimePickerView alloc] initWithTitle:@"选择时间"];
     pickerView.currentDate = self.currentDate;
@@ -49,5 +76,17 @@
     [pickerView show];
 }
 
+- (void)sellingTickets {
+    OSSpinLockLock(&_lock);
+    static NSInteger tempCount = 20;
+//    @synchronized (self) {
+    
+        [NSThread sleepForTimeInterval:1];
+        tempCount--;
+        
+        NSLog(@"剩余票数-----%ld--%@",(long)tempCount,[NSThread currentThread]);
+//    }
+    OSSpinLockUnlock(&_lock);
+}
 
 @end

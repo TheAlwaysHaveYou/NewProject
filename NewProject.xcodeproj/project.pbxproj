@@ -32,6 +32,7 @@
 		315BA7FA20E4B7C9007D774D /* SizeClassController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 315BA7F820E4B7C9007D774D /* SizeClassController.xib */; };
 		315BA82820E4DD91007D774D /* CoreAnimtionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 315BA82720E4DD91007D774D /* CoreAnimtionController.m */; };
 		315BA82B20E4DE38007D774D /* DrawRectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 315BA82A20E4DE38007D774D /* DrawRectView.m */; };
+		3161F6F822409E07001935CD /* TempController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3161F6F722409E07001935CD /* TempController.m */; };
 		3166BC49212BEEF20052EB3A /* FKDMethodA.m in Sources */ = {isa = PBXBuildFile; fileRef = 3166BC48212BEEF20052EB3A /* FKDMethodA.m */; };
 		3166BC4C212BEEFE0052EB3A /* FKDMethodB.m in Sources */ = {isa = PBXBuildFile; fileRef = 3166BC4B212BEEFE0052EB3A /* FKDMethodB.m */; };
 		3166BC4F212BF0E20052EB3A /* ProxyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3166BC4E212BF0E20052EB3A /* ProxyViewController.m */; };
@@ -100,6 +101,8 @@
 		315BA82720E4DD91007D774D /* CoreAnimtionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreAnimtionController.m; sourceTree = "<group>"; };
 		315BA82920E4DE38007D774D /* DrawRectView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawRectView.h; sourceTree = "<group>"; };
 		315BA82A20E4DE38007D774D /* DrawRectView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawRectView.m; sourceTree = "<group>"; };
+		3161F6F622409E07001935CD /* TempController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TempController.h; sourceTree = "<group>"; };
+		3161F6F722409E07001935CD /* TempController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TempController.m; sourceTree = "<group>"; };
 		3166BC45212AAFF40052EB3A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		3166BC47212BEEF20052EB3A /* FKDMethodA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKDMethodA.h; sourceTree = "<group>"; };
 		3166BC48212BEEF20052EB3A /* FKDMethodA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKDMethodA.m; sourceTree = "<group>"; };
@@ -281,6 +284,8 @@
 				3166BC4B212BEEFE0052EB3A /* FKDMethodB.m */,
 				3166BC50212BF1DE0052EB3A /* FKDProxy.h */,
 				3166BC51212BF1DE0052EB3A /* FKDProxy.m */,
+				3161F6F622409E07001935CD /* TempController.h */,
+				3161F6F722409E07001935CD /* TempController.m */,
 			);
 			path = Proxy;
 			sourceTree = "<group>";
@@ -531,6 +536,7 @@
 				315BA7EF20E37268007D774D /* GCDController.m in Sources */,
 				315BA7F520E37A68007D774D /* AutoOneView.m in Sources */,
 				3166BC52212BF1DE0052EB3A /* FKDProxy.m in Sources */,
+				3161F6F822409E07001935CD /* TempController.m in Sources */,
 				31FCED821FC80C91007460EC /* NSString+Emojize.m in Sources */,
 				315BA82820E4DD91007D774D /* CoreAnimtionController.m in Sources */,
 				3166BC4F212BF0E20052EB3A /* ProxyViewController.m in Sources */,

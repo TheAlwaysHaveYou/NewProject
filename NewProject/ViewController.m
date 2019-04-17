@@ -36,7 +36,7 @@ typedef struct {
     
     MyName nn = {1,""};
     nn.age = 123;
-    
+    [self conformsToProtocol:@""];
     
     //6787899
     

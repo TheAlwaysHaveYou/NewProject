@@ -7,8 +7,11 @@
 //
 
 #import "FKD.h"
+#import <objc/runtime.h>
 
 @implementation FKD
+
+static NSMutableDictionary *map = nil;
 
 - (void)asdfasdfadsfafa:(NSInteger)originNumber {
     NSString *str = [@(originNumber) stringValue];
@@ -19,10 +22,31 @@
         [newString appendFormat:@"%c", ch];
     }
     
-    NSString *str = [NSString stringWithFormat:@"%d",originNumber];
+    NSString *finalStr = [NSString stringWithFormat:@"%d",originNumber];
     
 }
 
-
++ (void)load {
+    map = [NSMutableDictionary dictionary];
+    map[@"name1"]                = @"name1";
+    map[@"name2"]              = @"name2";
+    map[@"status1"]                = @"status1";
+    map[@"status2"]              = @"status2";
+}
+- (void)setDataDic:(NSDictionary *)dic {
+    [dic enumerateKeysAndObjectsUsingBlock:^(NSString * _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+        NSString *propertyKey = key;
+        if (propertyKey) {
+            objc_property_t property = class_getProperty([self class], propertyKey.UTF8String);
+            //特殊数据类型的处理
+            NSString *attribureString = [NSString stringWithCString:property_getAttributes(property) encoding:NSUTF8StringEncoding];
+            
+            [self setValue:obj forKey:propertyKey];
+        }
+    }];
+    
+    
+    
+}
 
 @end

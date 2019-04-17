@@ -10,4 +10,7 @@
 
 @interface FKD : NSObject
 
+@property (nonatomic , strong) NSString *name;
+@property (nonatomic , strong) NSString *status;
+
 @end
