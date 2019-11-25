@@ -25,7 +25,7 @@
     self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(changeNumber) userInfo:nil repeats:YES];;
     [[NSRunLoop alloc] addTimer:self.timer forMode:NSRunLoopCommonModes];
 //    [[NSRunLoop alloc] run];
-    CADisplayLink
+    
 }
 
 - (void)changeNumber {

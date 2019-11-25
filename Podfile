@@ -4,9 +4,9 @@ platform :ios, '9.0'
 target 'NewProject' do
 	use_frameworks!
 
-	pod 'LEEAlert'
+    pod 'LEEAlert'
     pod 'YYKit'
     
-    pod 'Graver'
-    
+#    pod 'Graver'
+
 end

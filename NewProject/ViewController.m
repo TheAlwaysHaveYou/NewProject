@@ -36,9 +36,8 @@ typedef struct {
     
     MyName nn = {1,""};
     nn.age = 123;
-    [self conformsToProtocol:@""];
     
-    //6787899
+//    [self conformsToProtocol:@""];判断当前类是否实现了某个protocol协议
     
 //    FKDLabel *label = [[FKDLabel alloc] init];
     
