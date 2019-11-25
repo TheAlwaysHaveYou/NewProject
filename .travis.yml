@@ -1,6 +1,6 @@
 language: objective-c
-osx_image: xcode10
-
+osx_image: xcode10.2
+xcode_project: NewProject.xcworkspace
 
 #上传到 Codecov
 after_success:
