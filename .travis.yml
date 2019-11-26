@@ -1,7 +1,7 @@
 language: objective-c
 osx_image: xcode10.2
 xcode_workspace: NewProject.xcworkspace
-xcode_scheme: NewProject
+xcode_scheme: Shall
 
 #上传到 Codecov
 after_success:
