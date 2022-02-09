@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		182124BB26E4F0C1005FBC5A /* ClockNumberController+MethodExchange.m in Sources */ = {isa = PBXBuildFile; fileRef = 182124BA26E4F0C1005FBC5A /* ClockNumberController+MethodExchange.m */; };
 		182D61CD26B542E700F74AEA /* FKDTimerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D61CC26B542E700F74AEA /* FKDTimerVC.m */; };
+		18B6E9AA27B3A0A10041C5FA /* ToolListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B6E9A927B3A0A10041C5FA /* ToolListView.m */; };
+		18B6E9AF27B3A0D10041C5FA /* ToolFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B6E9AE27B3A0D10041C5FA /* ToolFooterView.m */; };
+		18B6E9B427B3A17F0041C5FA /* ToolListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B6E9B327B3A17F0041C5FA /* ToolListItem.m */; };
+		18B6E9B827B3A19A0041C5FA /* ToolListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B6E9B727B3A19A0041C5FA /* ToolListViewModel.m */; };
+		18B6E9BC27B3A1AF0041C5FA /* ToolFooterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B6E9BB27B3A1AF0041C5FA /* ToolFooterViewModel.m */; };
+		18B6E9C027B3A1BF0041C5FA /* ToolListItemViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B6E9BF27B3A1BF0041C5FA /* ToolListItemViewModel.m */; };
 		3101A1272133F2DF00A70334 /* SpecialTimePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3101A1262133F2DF00A70334 /* SpecialTimePickerView.m */; };
 		3102771D1EC5A43700F6B069 /* FKDLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3102771C1EC5A43700F6B069 /* FKDLabel.m */; };
 		310277211ECA89FD00F6B069 /* beautiful.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 310277201ECA89FD00F6B069 /* beautiful.jpeg */; };
@@ -60,6 +66,18 @@
 		182124BA26E4F0C1005FBC5A /* ClockNumberController+MethodExchange.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ClockNumberController+MethodExchange.m"; sourceTree = "<group>"; };
 		182D61CB26B542E700F74AEA /* FKDTimerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKDTimerVC.h; sourceTree = "<group>"; };
 		182D61CC26B542E700F74AEA /* FKDTimerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKDTimerVC.m; sourceTree = "<group>"; };
+		18B6E9A827B3A0A10041C5FA /* ToolListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolListView.h; sourceTree = "<group>"; };
+		18B6E9A927B3A0A10041C5FA /* ToolListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolListView.m; sourceTree = "<group>"; };
+		18B6E9AD27B3A0D10041C5FA /* ToolFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolFooterView.h; sourceTree = "<group>"; };
+		18B6E9AE27B3A0D10041C5FA /* ToolFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolFooterView.m; sourceTree = "<group>"; };
+		18B6E9B227B3A17F0041C5FA /* ToolListItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolListItem.h; sourceTree = "<group>"; };
+		18B6E9B327B3A17F0041C5FA /* ToolListItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolListItem.m; sourceTree = "<group>"; };
+		18B6E9B627B3A19A0041C5FA /* ToolListViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolListViewModel.h; sourceTree = "<group>"; };
+		18B6E9B727B3A19A0041C5FA /* ToolListViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolListViewModel.m; sourceTree = "<group>"; };
+		18B6E9BA27B3A1AF0041C5FA /* ToolFooterViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolFooterViewModel.h; sourceTree = "<group>"; };
+		18B6E9BB27B3A1AF0041C5FA /* ToolFooterViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolFooterViewModel.m; sourceTree = "<group>"; };
+		18B6E9BE27B3A1BF0041C5FA /* ToolListItemViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolListItemViewModel.h; sourceTree = "<group>"; };
+		18B6E9BF27B3A1BF0041C5FA /* ToolListItemViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolListItemViewModel.m; sourceTree = "<group>"; };
 		24389B160A0E95B617449A1B /* Pods-NewProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewProject/Pods-NewProject.debug.xcconfig"; sourceTree = "<group>"; };
 		3101A1252133F2DF00A70334 /* SpecialTimePickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpecialTimePickerView.h; sourceTree = "<group>"; };
 		3101A1262133F2DF00A70334 /* SpecialTimePickerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpecialTimePickerView.m; sourceTree = "<group>"; };
@@ -168,6 +186,25 @@
 			path = Timer;
 			sourceTree = "<group>";
 		};
+		18B6E9A727B39FF60041C5FA /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				18B6E9A827B3A0A10041C5FA /* ToolListView.h */,
+				18B6E9A927B3A0A10041C5FA /* ToolListView.m */,
+				18B6E9AD27B3A0D10041C5FA /* ToolFooterView.h */,
+				18B6E9AE27B3A0D10041C5FA /* ToolFooterView.m */,
+				18B6E9B227B3A17F0041C5FA /* ToolListItem.h */,
+				18B6E9B327B3A17F0041C5FA /* ToolListItem.m */,
+				18B6E9B627B3A19A0041C5FA /* ToolListViewModel.h */,
+				18B6E9B727B3A19A0041C5FA /* ToolListViewModel.m */,
+				18B6E9BA27B3A1AF0041C5FA /* ToolFooterViewModel.h */,
+				18B6E9BB27B3A1AF0041C5FA /* ToolFooterViewModel.m */,
+				18B6E9BE27B3A1BF0041C5FA /* ToolListItemViewModel.h */,
+				18B6E9BF27B3A1BF0041C5FA /* ToolListItemViewModel.m */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
 		3101A1242133F2C100A70334 /* SpecialTimePicker */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,6 +252,7 @@
 				3108D1801FAEEB7400DC5596 /* MyLottoCycleView.m */,
 				31FCED761FC69FB2007460EC /* CustomImageController.h */,
 				31FCED771FC69FB2007460EC /* CustomImageController.m */,
+				18B6E9A727B39FF60041C5FA /* MVVM */,
 				182124B826E4F04D005FBC5A /* Category */,
 				182D61CA26B542C900F74AEA /* Timer */,
 				3101A1242133F2C100A70334 /* SpecialTimePicker */,
@@ -527,15 +565,21 @@
 				3154470E1EC1C3A8009FEB1A /* ViewController.m in Sources */,
 				310277251ECAAAC000F6B069 /* ClockNumberController.m in Sources */,
 				182124BB26E4F0C1005FBC5A /* ClockNumberController+MethodExchange.m in Sources */,
+				18B6E9BC27B3A1AF0041C5FA /* ToolFooterViewModel.m in Sources */,
 				3154470B1EC1C3A8009FEB1A /* AppDelegate.m in Sources */,
+				18B6E9AA27B3A0A10041C5FA /* ToolListView.m in Sources */,
 				3102772A1ED2806900F6B069 /* SecondController.m in Sources */,
 				3101A1272133F2DF00A70334 /* SpecialTimePickerView.m in Sources */,
 				3166BC49212BEEF20052EB3A /* FKDMethodA.m in Sources */,
 				31ED67B31FD7C7250002E386 /* CustomView.m in Sources */,
 				315BA7EA20E36F69007D774D /* AutoLayoutController.m in Sources */,
 				315BA7C320E0BB07007D774D /* EventKitController.m in Sources */,
+				18B6E9C027B3A1BF0041C5FA /* ToolListItemViewModel.m in Sources */,
 				31FCED781FC69FB2007460EC /* CustomImageController.m in Sources */,
+				18B6E9AF27B3A0D10041C5FA /* ToolFooterView.m in Sources */,
 				3102771D1EC5A43700F6B069 /* FKDLabel.m in Sources */,
+				18B6E9B427B3A17F0041C5FA /* ToolListItem.m in Sources */,
+				18B6E9B827B3A19A0041C5FA /* ToolListViewModel.m in Sources */,
 				315BA7F220E372C3007D774D /* Person.m in Sources */,
 				31ED67B21FD7C7250002E386 /* QCMethod.m in Sources */,
 				31D877E11F38711400061711 /* ScrollSectionController.m in Sources */,
