@@ -7,8 +7,13 @@
 //
 
 #import "ClockNumberController.h"
+#import "GCDAsyncSocket.h"
 
-@interface ClockNumberController ()
+@interface ClockNumberController ()<GCDAsyncSocketDelegate>
+
+@property (nonatomic , strong) UITextField *textField;
+@property (nonatomic , strong) GCDAsyncSocket *clientSocket;
+@property (nonatomic , strong) NSTimer *connectTimer;
 
 @end
 
@@ -16,11 +21,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    NSLog(@"ClockNumberController---viewDidLoad---原方法");
     
+//    [self GCDTest];
     
-    [self GCDTest];
-    
+    [self socketService];
 }
 
 - (void)GCDTest {
@@ -99,4 +104,56 @@
     
 }
 
+- (void)socketService {
+    self.textField = [[UITextField alloc] initWithFrame:CGRectMake(0, 100, 200, 50)];
+    self.textField.backgroundColor = [UIColor lightGrayColor];
+    [self.view addSubview:self.textField];
+    
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 150, 40, 40)];
+    btn.backgroundColor = [UIColor greenColor];
+    [self.view addSubview:btn];
+    [btn addTarget:self action:@selector(sendMessage:) forControlEvents:UIControlEventTouchUpInside];
+    
+    self.clientSocket = [[GCDAsyncSocket alloc] initWithDelegate:self delegateQueue:dispatch_get_main_queue()];
+    NSError *error = nil;
+    [self.clientSocket connectToHost:@"192.168.0.103" onPort:12345 viaInterface:nil withTimeout:-1 error:&error];
+    if (error) {
+        NSLog(@"连接报错--%@",error.localizedDescription);
+    }
+    
+    
+}
+- (void)sendMessage:(UIButton *)sender {
+    [self.view resignFirstResponder];
+    NSString *text = self.textField.text;
+    NSData *data = [text dataUsingEncoding:NSUTF8StringEncoding];
+    [self.clientSocket writeData:data withTimeout:-1 tag:0];
+}
+
+- (void)addCostomeTime {
+    self.connectTimer = [NSTimer scheduledTimerWithTimeInterval:1 block:^(NSTimer * _Nonnull timer) {
+        //发送心跳连接
+        float version = [[UIDevice currentDevice] systemVersion].floatValue;
+        NSString *logConnect = [NSString stringWithFormat:@"999%f",version];
+        NSData *data = [logConnect dataUsingEncoding:NSUTF8StringEncoding];
+        [self.clientSocket writeData:data withTimeout:-1 tag:0];
+        
+    } repeats:YES];
+    [[NSRunLoop currentRunLoop] addTimer:self.connectTimer forMode:NSRunLoopCommonModes];
+}
+#pragma mark - GCDAsyncSocketDelegate
+- (void)socket:(GCDAsyncSocket *)sock didConnectToHost:(NSString *)host port:(uint16_t)port {
+    NSLog(@"连接到了host--%@--port--%d",host,port);
+    [self addCostomeTime];
+}
+- (void)socket:(GCDAsyncSocket *)sock didReadData:(NSData *)data withTag:(long)tag {
+    NSLog(@"收到了服务端的回信--%@",[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
+    [self.clientSocket readDataWithTimeout:-1 tag:0];
+}
+- (void)socketDidDisconnect:(GCDAsyncSocket *)sock withError:(NSError *)err {
+    NSLog(@"客户端断开连接");
+    self.clientSocket.delegate = nil;
+    self.clientSocket = nil;
+    [self.connectTimer invalidate];
+}
 @end

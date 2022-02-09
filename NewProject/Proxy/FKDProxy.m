@@ -48,6 +48,17 @@
     free(methodList);
 }
 
+- (nullable NSMethodSignature *)methodSignatureForSelector:(SEL)sel {
+    NSString *methodName = NSStringFromSelector(sel);
+    
+    id target = self.methodsMap[methodName];
+    if (target && [target respondsToSelector:sel]) {
+        return [target methodSignatureForSelector:sel];
+    }else {
+        return [super methodSignatureForSelector:sel];
+    }
+}
+
 //重写父类方法
 - (void)forwardInvocation:(NSInvocation *)invocation {
     SEL sel = invocation.selector;
@@ -58,17 +69,6 @@
         [invocation invokeWithTarget:target];
     }else {
         [super forwardInvocation:invocation];
-    }
-}
-
-- (nullable NSMethodSignature *)methodSignatureForSelector:(SEL)sel {
-    NSString *methodName = NSStringFromSelector(sel);
-    
-    id target = self.methodsMap[methodName];
-    if (target && [target respondsToSelector:sel]) {
-        return [target methodSignatureForSelector:sel];
-    }else {
-        return [super methodSignatureForSelector:sel];
     }
 }
 

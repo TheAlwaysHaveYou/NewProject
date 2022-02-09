@@ -8,7 +8,6 @@
 
 #import "EventKitController.h"
 #import <EventKit/EventKit.h>
-#import "LEEAlert.h"
 #import "FKDLabel.h"
 
 @interface EventKitController ()
@@ -20,9 +19,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
-    
-    
     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 500, 100, 100)];
     btn.backgroundColor = [UIColor blueColor];
     [btn addTarget:self action:@selector(showAlerView:) forControlEvents:UIControlEventTouchUpInside];
@@ -31,12 +27,6 @@
 }
 
 - (void)showAlerView:(UIButton *)sender {
-    [LEEAlert alert].config.LeeAddAction(^(LEEAction *action) {
-        action.title = @"2323";
-        action.clickBlock = ^{
-            NSLog(@"嘿嘿嘿");
-        };
-    }).LeeShow();
     
 }
 

@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		182124BB26E4F0C1005FBC5A /* ClockNumberController+MethodExchange.m in Sources */ = {isa = PBXBuildFile; fileRef = 182124BA26E4F0C1005FBC5A /* ClockNumberController+MethodExchange.m */; };
+		182D61CD26B542E700F74AEA /* FKDTimerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 182D61CC26B542E700F74AEA /* FKDTimerVC.m */; };
 		3101A1272133F2DF00A70334 /* SpecialTimePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3101A1262133F2DF00A70334 /* SpecialTimePickerView.m */; };
 		3102771D1EC5A43700F6B069 /* FKDLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3102771C1EC5A43700F6B069 /* FKDLabel.m */; };
 		310277211ECA89FD00F6B069 /* beautiful.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 310277201ECA89FD00F6B069 /* beautiful.jpeg */; };
 		310277251ECAAAC000F6B069 /* ClockNumberController.m in Sources */ = {isa = PBXBuildFile; fileRef = 310277231ECAAAC000F6B069 /* ClockNumberController.m */; };
-		310277261ECAAAC000F6B069 /* ClockNumberController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 310277241ECAAAC000F6B069 /* ClockNumberController.xib */; };
 		3102772A1ED2806900F6B069 /* SecondController.m in Sources */ = {isa = PBXBuildFile; fileRef = 310277281ED2806900F6B069 /* SecondController.m */; };
-		3102772B1ED2806900F6B069 /* SecondController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 310277291ED2806900F6B069 /* SecondController.xib */; };
 		3108D1811FAEEB7400DC5596 /* MyLottoCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3108D1801FAEEB7400DC5596 /* MyLottoCycleView.m */; };
 		313D26C62153C82E00DA8CD7 /* FKD.m in Sources */ = {isa = PBXBuildFile; fileRef = 313D26C52153C82E00DA8CD7 /* FKD.m */; };
 		315447081EC1C3A8009FEB1A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 315447071EC1C3A8009FEB1A /* main.m */; };
@@ -56,6 +56,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		182124B926E4F0C1005FBC5A /* ClockNumberController+MethodExchange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClockNumberController+MethodExchange.h"; sourceTree = "<group>"; };
+		182124BA26E4F0C1005FBC5A /* ClockNumberController+MethodExchange.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ClockNumberController+MethodExchange.m"; sourceTree = "<group>"; };
+		182D61CB26B542E700F74AEA /* FKDTimerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKDTimerVC.h; sourceTree = "<group>"; };
+		182D61CC26B542E700F74AEA /* FKDTimerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FKDTimerVC.m; sourceTree = "<group>"; };
 		24389B160A0E95B617449A1B /* Pods-NewProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewProject/Pods-NewProject.debug.xcconfig"; sourceTree = "<group>"; };
 		3101A1252133F2DF00A70334 /* SpecialTimePickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpecialTimePickerView.h; sourceTree = "<group>"; };
 		3101A1262133F2DF00A70334 /* SpecialTimePickerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpecialTimePickerView.m; sourceTree = "<group>"; };
@@ -64,10 +68,8 @@
 		310277201ECA89FD00F6B069 /* beautiful.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = beautiful.jpeg; sourceTree = "<group>"; };
 		310277221ECAAAC000F6B069 /* ClockNumberController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockNumberController.h; sourceTree = "<group>"; };
 		310277231ECAAAC000F6B069 /* ClockNumberController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockNumberController.m; sourceTree = "<group>"; };
-		310277241ECAAAC000F6B069 /* ClockNumberController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClockNumberController.xib; sourceTree = "<group>"; };
 		310277271ED2806900F6B069 /* SecondController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondController.h; sourceTree = "<group>"; };
 		310277281ED2806900F6B069 /* SecondController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondController.m; sourceTree = "<group>"; };
-		310277291ED2806900F6B069 /* SecondController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondController.xib; sourceTree = "<group>"; };
 		3108D17F1FAEEB7400DC5596 /* MyLottoCycleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyLottoCycleView.h; sourceTree = "<group>"; };
 		3108D1801FAEEB7400DC5596 /* MyLottoCycleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyLottoCycleView.m; sourceTree = "<group>"; };
 		313D26C42153C82E00DA8CD7 /* FKD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FKD.h; sourceTree = "<group>"; };
@@ -148,6 +150,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		182124B826E4F04D005FBC5A /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				182124B926E4F0C1005FBC5A /* ClockNumberController+MethodExchange.h */,
+				182124BA26E4F0C1005FBC5A /* ClockNumberController+MethodExchange.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		182D61CA26B542C900F74AEA /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				182D61CB26B542E700F74AEA /* FKDTimerVC.h */,
+				182D61CC26B542E700F74AEA /* FKDTimerVC.m */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
 		3101A1242133F2C100A70334 /* SpecialTimePicker */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,16 +207,16 @@
 				310277221ECAAAC000F6B069 /* ClockNumberController.h */,
 				310277231ECAAAC000F6B069 /* ClockNumberController.m */,
 				3158507B1EE50660003B37BD /* Script.sh */,
-				310277241ECAAAC000F6B069 /* ClockNumberController.xib */,
 				310277271ED2806900F6B069 /* SecondController.h */,
 				310277281ED2806900F6B069 /* SecondController.m */,
-				310277291ED2806900F6B069 /* SecondController.xib */,
 				31D877DF1F38711400061711 /* ScrollSectionController.h */,
 				31D877E01F38711400061711 /* ScrollSectionController.m */,
 				3108D17F1FAEEB7400DC5596 /* MyLottoCycleView.h */,
 				3108D1801FAEEB7400DC5596 /* MyLottoCycleView.m */,
 				31FCED761FC69FB2007460EC /* CustomImageController.h */,
 				31FCED771FC69FB2007460EC /* CustomImageController.m */,
+				182124B826E4F04D005FBC5A /* Category */,
+				182D61CA26B542C900F74AEA /* Timer */,
 				3101A1242133F2C100A70334 /* SpecialTimePicker */,
 				3166BC46212BEC410052EB3A /* Proxy */,
 				315BA82520E4DD6E007D774D /* CoreAnimation */,
@@ -407,10 +427,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				315447161EC1C3A8009FEB1A /* LaunchScreen.storyboard in Resources */,
-				310277261ECAAAC000F6B069 /* ClockNumberController.xib in Resources */,
 				315447131EC1C3A8009FEB1A /* Assets.xcassets in Resources */,
 				3158507C1EE50660003B37BD /* Script.sh in Resources */,
-				3102772B1ED2806900F6B069 /* SecondController.xib in Resources */,
 				315BA7FA20E4B7C9007D774D /* SizeClassController.xib in Resources */,
 				315447111EC1C3A8009FEB1A /* Main.storyboard in Resources */,
 				310277211ECA89FD00F6B069 /* beautiful.jpeg in Resources */,
@@ -472,12 +490,22 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-NewProject/Pods-NewProject-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/LEEAlert/LEEAlert.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
+				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
+				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
+				"${BUILT_PRODUCTS_DIR}/Texture/AsyncDisplayKit.framework",
 				"${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LEEAlert.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINOperation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AsyncDisplayKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,6 +526,7 @@
 				3108D1811FAEEB7400DC5596 /* MyLottoCycleView.m in Sources */,
 				3154470E1EC1C3A8009FEB1A /* ViewController.m in Sources */,
 				310277251ECAAAC000F6B069 /* ClockNumberController.m in Sources */,
+				182124BB26E4F0C1005FBC5A /* ClockNumberController+MethodExchange.m in Sources */,
 				3154470B1EC1C3A8009FEB1A /* AppDelegate.m in Sources */,
 				3102772A1ED2806900F6B069 /* SecondController.m in Sources */,
 				3101A1272133F2DF00A70334 /* SpecialTimePickerView.m in Sources */,
@@ -518,6 +547,7 @@
 				3161F6F822409E07001935CD /* TempController.m in Sources */,
 				31FCED821FC80C91007460EC /* NSString+Emojize.m in Sources */,
 				315BA82820E4DD91007D774D /* CoreAnimtionController.m in Sources */,
+				182D61CD26B542E700F74AEA /* FKDTimerVC.m in Sources */,
 				3166BC4F212BF0E20052EB3A /* ProxyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

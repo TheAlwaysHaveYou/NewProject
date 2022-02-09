@@ -14,6 +14,7 @@
 #import "CoreAnimtionController.h"
 #import "ProxyViewController.h"
 
+#import <CrashReporter/CrashReporter.h>
 
 @interface AppDelegate ()<UITabBarControllerDelegate>
 
@@ -24,16 +25,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-//    self.window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
-    
-//    UIViewController *viewController1 = [[ClockNumberController alloc] init];
-//    viewController1.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"第一页" image:nil tag:1];
-//    UIViewController *viewController2 = [[SecondController alloc] init];
-//    viewController2.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"第二页" image:nil tag:2];
-//    UITabBarController *tabBarController = [[UITabBarController alloc] init];
-//    tabBarController.viewControllers = @[viewController1, viewController2];
-//    tabBarController.delegate = self;
-//    self.window.rootViewController = tabBarController;
+    self.window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    UINavigationController *viewController1 = [[UINavigationController alloc] initWithRootViewController:[[ClockNumberController alloc] init]];
+    viewController1.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"第一页" image:nil tag:1];
+    UINavigationController *viewController2 = [[UINavigationController alloc] initWithRootViewController:[[SecondController alloc] init]];
+    viewController2.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"第二页" image:nil tag:2];
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    tabBarController.viewControllers = @[viewController1, viewController2];
+    tabBarController.delegate = self;
+    self.window.rootViewController = tabBarController;
     
     
 //    EventKitController *vc = [[EventKitController alloc] init];
@@ -43,6 +44,7 @@
 //    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:vc];
 //    self.window.backgroundColor = [UIColor whiteColor];
 //    [self.window makeKeyAndVisible];
+    
     
     
     return YES;

@@ -4,9 +4,13 @@ platform :ios, '9.0'
 target 'NewProject' do
 	use_frameworks!
 
-    pod 'LEEAlert'
+#    pod 'LEEAlert'
     pod 'YYKit'
-    
+    pod "Texture"
 #    pod 'Graver'
-
+    pod 'PLCrashReporter'
+    
+    
+    pod 'SocketRocket'
+    pod 'CocoaAsyncSocket'  
 end

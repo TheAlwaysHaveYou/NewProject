@@ -8,7 +8,6 @@
 
 #import "CoreAnimtionController.h"
 #import "DrawRectView.h"
-#import "LEEAlert.h"
 
 @interface CoreAnimtionController ()
 
@@ -31,12 +30,7 @@
 }
 
 - (void)twoTest {
-    [LEEAlert alert].config.
-    LeeAddCustomView(^(LEECustomView *custom) {
-        
-    }).
-    LeeCustomView([UIView new]).
-    LeeShow();
+    
 }
 
 @end

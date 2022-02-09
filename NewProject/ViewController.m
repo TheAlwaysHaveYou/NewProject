@@ -22,20 +22,44 @@ typedef struct {
 }MyName;
 
 @interface ViewController ()
-
+{
+    NSString *_name;
+}
 @property (nonatomic , strong) UIView *containerView;
 
 @property (nonatomic , strong) NSMutableArray *subViews;
+
+@property (nonatomic , strong) NSString *name;
 
 @end
 
 @implementation ViewController
 
+- (void)setContainerView:(UIView *)containerView {
+    _containerView = containerView;
+    
+}
+
+- (void)setName:(NSString *)name {
+    self.name = name;
+
+}
+- (NSString *)name {
+    return _name;
+}
+
+
+//- (NSString *)name {
+//    return  @"";
+//}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _name = @"";
     
     MyName nn = {1,""};
     nn.age = 123;
+   
     
 //    [self conformsToProtocol:@""];判断当前类是否实现了某个protocol协议
     
